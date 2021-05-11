@@ -1,0 +1,14 @@
+CREATE TABLE użytkownik(
+    id int,
+    imię VARCHAR(20),
+    nazwisko VARCHAR(20),
+    wiek INTEGER,
+    data_urodzenia DATE
+);
+
+INSERT INTO użytkownik VALUES (1,'Adam','Nowak','25','1995-02-10');
+INSERT INTO użytkownik VALUES (2,'Jan','Kowalski','20','2000-03-20');
+
+UPDATE użytkownik SET imię="Tomasz" WHERE id=1;
+
+DELETE FROM użytkownik WHERE id=2;
